@@ -29,21 +29,6 @@ test_that("Patients to CDM", {
 })
 
 test_that("SQL exists proj", {
-connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "duckdb",
-                                                                server = CDMConnector::eunomia_dir("empty_cdm"))
-
-
-connnection <- DatabaseConnector::connect(connectionDetails)
-
-pushSQLpatients(connection = connnection,
-                connectionDetails,
-                cdmDatabaseSchema = "main",
-                pathSQL = NULL,
-                testName = NULL)
-
-DatabaseConnector::querySql(connnection, "SELECT * FROM main.person;")
-
-
 filePath <- testthat::test_path("TestPatientsTemplateComorbidities.xlsx")
   outputPath <- paste0(proj_path(), "/", fs::path("inst", "testCases"), "/", "test", ".json")
   testDir <- paste0(proj_path(), "/", fs::path("inst", "testCases"))
