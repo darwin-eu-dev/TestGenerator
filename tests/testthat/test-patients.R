@@ -18,3 +18,5 @@ test_that("Patients to CDM", {
   expect_equal(length(number_persons), 20)
   unlink(outputPath, recursive = TRUE)
 })
+
+
