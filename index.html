@@ -101,15 +101,15 @@
 <code class="sourceCode R"><span><span class="va">cdm</span> <span class="op">&lt;-</span> <span class="fu">TestGenerator</span><span class="fu">::</span><span class="fu"><a href="reference/patientsCDM.html">patientsCDM</a></span><span class="op">(</span></span>
 <span>  pathJson <span class="op">=</span> <span class="st">"inst/testCases"</span>, </span>
 <span>  testName <span class="op">=</span> <span class="st">"test"</span><span class="op">)</span></span></code></pre></div>
-<p>Now the user has a CDM reference with a complete vocabulary and a universe of just 10 patients to unit test functions of a particular study.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Unit Test Definition created successfully: C:\Users\cbarboza\AppData\Local\Temp\RtmpiqaYIy/test/test.json</span></span>
+<p>Now the user has a CDM reference with a complete vocabulary and just 10 patients to unit test functions of a particular study.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Unit Test Definition created successfully: test</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Patients pushes to blanck CDM successfully</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # OMOP CDM reference (tbl_duckdb_connection)</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Tables: person, observation_period, visit_occurrence, visit_detail, condition_occurrence, drug_exposure, procedure_occurrence, device_exposure, measurement, observation, death, note, note_nlp, specimen, fact_relationship, location, care_site, provider, payer_plan_period, cost, drug_era, dose_era, condition_era, metadata, cdm_source, concept, vocabulary, domain, concept_class, concept_relationship, relationship, concept_synonym, concept_ancestor, source_to_concept_map, drug_strength, cohort_definition, attribute_definition</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # Source:   table&lt;person&gt; [?? x 18]</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # Database: DuckDB v0.9.1 [cbarboza@Windows 10 x64:R 4.3.1/C:\Users\cbarboza\AppData\Local\Temp\RtmpiqaYIy\file33f87bf01089.duckdb]</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # Database: DuckDB v0.9.1 [cbarboza@Windows 10 x64:R 4.3.1/C:\Users\cbarboza\AppData\Local\Temp\Rtmpo1GB6k\file5e2c3c3a6f6b.duckdb]</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    person_id gender_concept_id year_of_birth month_of_birth day_of_birth</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;        &lt;int&gt;             &lt;int&gt;         &lt;int&gt;          &lt;int&gt;        &lt;int&gt;</span></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1         1              8532          1980             NA           NA</span></span>
