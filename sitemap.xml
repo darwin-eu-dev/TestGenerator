@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/404.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/articles/create-sample-data.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/index.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/reference/patientsCDM.html</loc>
+  </url>
+  <url>
+    <loc>https://darwin-eu-dev.github.io/TestGenerator/reference/readPatients.html</loc>
+  </url>
+</urlset>
