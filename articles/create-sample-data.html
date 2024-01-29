@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">TestGenerator</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.5</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,6 +105,14 @@ analysis.</p>
 JSON format and saves it in the project. The sample data is then pushed
 to a blank CDM with <code><a href="../reference/patientsCDM.html">patientsCDM()</a></code>.</p>
 <pre><code><span><span class="co">#&gt; Unit Test Definition created successfully: test</span></span>
+<span><span class="co">#&gt; Registered S3 methods overwritten by 'CDMConnector':</span></span>
+<span><span class="co">#&gt;   method                from        </span></span>
+<span><span class="co">#&gt;   $.cdm_reference       omopgenerics</span></span>
+<span><span class="co">#&gt;   $&lt;-.cdm_reference     omopgenerics</span></span>
+<span><span class="co">#&gt;   [[.cdm_reference      omopgenerics</span></span>
+<span><span class="co">#&gt;   [[&lt;-.cdm_reference    omopgenerics</span></span>
+<span><span class="co">#&gt;   collect.cdm_reference omopgenerics</span></span>
+<span><span class="co">#&gt;   print.cdm_reference   omopgenerics</span></span>
 <span><span class="co">#&gt; Patients pushed to blank CDM successfully</span></span>
 <span><span class="co">#&gt; # OMOP CDM reference (tbl_duckdb_connection)</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -112,7 +120,7 @@ to a blank CDM with <code><a href="../reference/patientsCDM.html">patientsCDM()<
 <p>That returns a CDM reference object that now can be used to perform
 unit tests.</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #949494;"># Source:   table&lt;person&gt; [?? x 18]</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># Database: DuckDB v0.9.2 [unknown@Linux 6.2.0-1018-azure:R 4.3.2//tmp/RtmpCt7Yg8/file1900be0a56.duckdb]</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># Database: DuckDB v0.9.2 [unknown@Linux 6.2.0-1018-azure:R 4.3.2//tmp/Rtmp40Lahc/file18f55ccaac97.duckdb]</span></span></span>
 <span><span class="co">#&gt;    person_id gender_concept_id year_of_birth month_of_birth day_of_birth</span></span>
 <span><span class="co">#&gt;        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>         1              <span style="text-decoration: underline;">8</span>532          <span style="text-decoration: underline;">1</span>980             <span style="color: #BB0000;">NA</span>           <span style="color: #BB0000;">NA</span></span></span>
