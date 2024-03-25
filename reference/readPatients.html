@@ -57,7 +57,12 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">readPatients</span><span class="op">(</span>filePath <span class="op">=</span> <span class="cn">NULL</span>, testName <span class="op">=</span> <span class="st">"test"</span>, outputPath <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">readPatients</span><span class="op">(</span></span>
+<span>  filePath <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  testName <span class="op">=</span> <span class="st">"test"</span>,</span>
+<span>  outputPath <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  cdmVersion <span class="op">=</span> <span class="st">"5.3"</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -72,6 +77,10 @@
 
 <dt>outputPath</dt>
 <dd><p>Path of the output file, if NULL, a folder will be created in the project folder inst/testCases.</p></dd>
+
+
+<dt>cdmVersion</dt>
+<dd><p>cdm version, default "5.3".</p></dd>
 
 </dl></div>
     <div class="section level2">

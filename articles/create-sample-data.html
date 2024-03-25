@@ -105,14 +105,25 @@ analysis.</p>
 JSON format and saves it in the project. The sample data is then pushed
 to a blank CDM with <code><a href="../reference/patientsCDM.html">patientsCDM()</a></code>.</p>
 <pre><code><span><span class="co">#&gt; Unit Test Definition created successfully: test</span></span>
+<span><span class="co">#&gt; <span style="color: #BBBB00;">!</span> cdm name not specified and could not be inferred from the cdm source table</span></span>
 <span><span class="co">#&gt; Patients pushed to blank CDM successfully</span></span>
-<span><span class="co">#&gt; # OMOP CDM reference (tbl_duckdb_connection)</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Tables: person, observation_period, visit_occurrence, visit_detail, condition_occurrence, drug_exposure, procedure_occurrence, device_exposure, measurement, observation, death, note, note_nlp, specimen, fact_relationship, location, care_site, provider, payer_plan_period, cost, drug_era, dose_era, condition_era, metadata, cdm_source, concept, vocabulary, domain, concept_class, concept_relationship, relationship, concept_synonym, concept_ancestor, source_to_concept_map, drug_strength, cohort_definition, attribute_definition</span></span></code></pre>
+<span><span class="co">#&gt; <span style="color: #00BBBB;">──</span> <span style="font-weight: bold;"># OMOP CDM reference (duckdb) of An OMOP CDM database</span> <span style="color: #00BBBB;">───────────────────────</span></span></span>
+<span><span class="co">#&gt; • <span style="font-weight: bold;">omop tables:</span> person, observation_period, visit_occurrence, visit_detail,</span></span>
+<span><span class="co">#&gt; condition_occurrence, drug_exposure, procedure_occurrence, device_exposure,</span></span>
+<span><span class="co">#&gt; measurement, observation, death, note, note_nlp, specimen, fact_relationship,</span></span>
+<span><span class="co">#&gt; location, care_site, provider, payer_plan_period, cost, drug_era, dose_era,</span></span>
+<span><span class="co">#&gt; condition_era, metadata, cdm_source, concept, vocabulary, domain,</span></span>
+<span><span class="co">#&gt; concept_class, concept_relationship, relationship, concept_synonym,</span></span>
+<span><span class="co">#&gt; concept_ancestor, source_to_concept_map, drug_strength, cohort_definition,</span></span>
+<span><span class="co">#&gt; attribute_definition</span></span>
+<span><span class="co">#&gt; • <span style="font-weight: bold;">cohort tables:</span> -</span></span>
+<span><span class="co">#&gt; • <span style="font-weight: bold;">achilles tables:</span> -</span></span>
+<span><span class="co">#&gt; • <span style="font-weight: bold;">other tables:</span> -</span></span></code></pre>
 <p>That returns a CDM reference object that now can be used to perform
 unit tests.</p>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># Source:   table&lt;person&gt; [?? x 18]</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># Database: DuckDB v0.9.2 [unknown@Linux 6.2.0-1019-azure:R 4.3.2//tmp/RtmpazlKxc/file18974354dc6.duckdb]</span></span></span>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># Source:   table&lt;main.person&gt; [?? x 18]</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># Database: DuckDB v0.10.0 [unknown@Linux 6.5.0-1016-azure:R 4.3.3//tmp/RtmpNffnDy/file195d388a8ef9.duckdb]</span></span></span>
 <span><span class="co">#&gt;    person_id gender_concept_id year_of_birth month_of_birth day_of_birth</span></span>
 <span><span class="co">#&gt;        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>         1              <span style="text-decoration: underline;">8</span>532          <span style="text-decoration: underline;">1</span>980             <span style="color: #BB0000;">NA</span>           <span style="color: #BB0000;">NA</span></span></span>
