@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   create-sample-data: create-sample-data.html
-last_built: 2024-03-25T09:30Z
+last_built: 2024-03-27T09:11Z
 urls:
   reference: https://darwin-eu-dev.github.io/TestGenerator/reference
   article: https://darwin-eu-dev.github.io/TestGenerator/articles
